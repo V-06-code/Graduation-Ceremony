@@ -24,7 +24,7 @@
             Club activities at OAN-SH foster a strong sense of community and collaboration among students, encouraging them to work together towards shared objectives. These clubs provide invaluable opportunities for students to develop essential social skills, interacting with peers from diverse backgrounds and creating a more inclusive environment.</p>
     </section>-->
 
-    <!--<section id="homepage">
+    <section id="homepage">
         <div class="nav">
             <div class="logo">
                 Media Hub
@@ -51,7 +51,7 @@
         <div class="left">
         </div>
         <h1>Media Hub</h1>
-    </section>-->
+    </section>
 
     <section id="cardslider">
         <div class="swiper">
@@ -377,7 +377,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
             background-size: cover;
             background-position: center;
         }
@@ -446,7 +446,7 @@
         }
 
         .swiper-slide .back::before{
-            background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+            background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
             content: "";
             position: absolute;
             inset: 0;
@@ -515,7 +515,7 @@
             overflow: hidden;
             border-radius: 16px;
             box-shadow: 0px 3px 80px 3px rgba(0,0,0,0.2);
-            background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+            background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -539,8 +539,9 @@
             align-items: center;
             font-family: 'Great Vibes', cursive;
             font-size: 150px;
+            font-weight: 550;
             fill: none;
-            stroke: white;
+            stroke: black;
             stroke-width: 2;
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
@@ -579,14 +580,25 @@
             border-radius: 14px;
         }
 
-        /*@media screen and (max-width: 768px){
+
+
+        @media screen and (max-width: 768px){
             #homepage{
-                width: 380px;
+                width: auto;
+                filter: grayscale(10%) brightness(85%);
 
             }
 
+            .left{
+                width: 50%;
+            }
+
             #cardslider{
-                width: 380px;
+                width: auto;
+            }
+
+            .swiper{
+                margin: 20% auto;
             }
 
 
@@ -596,19 +608,20 @@
             }
 
             .nav{
-                padding: 10px 40px;
+                filter: none;
+                position: fixed;
+                padding: 0 10px;
             }
 
             .nav .logo{
-                font-size: 20px;
+                color: #fff;
+                font-size: 25px;
                 left: 0;
             }
 
-            .nav .redirect{
-                width: 50%;
-                height: 50%;
-                transform: translateX(10%);
-            }
+
+
+
 
             h1{
                 font-family: "Audiowide", sans-serif;
@@ -651,7 +664,142 @@
                 left: 55%;
 
             }
-        }*/
+        }
+
+        @media screen and (max-width: 1024px){
+            #homepage{
+                width: 100%;
+
+            }
+
+            .left{
+                width: 47%;
+            }
+
+            #cardslider{
+                width: auto;
+                overflow: hidden;
+            }
+
+            .swiper{
+                margin: 20% auto;
+            }
+
+            h1{
+                font-family: "Audiowide", sans-serif;
+                font-size: 160px;
+                font-weight: 800;
+                font-style: normal;
+                line-height: 200px;
+                text-align: left;
+                color: #fff;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
+            }
+
+            h1::before{
+                content: 'A';
+                font-family: "Audiowide", sans-serif;
+                font-size: 80px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 96px;
+                text-align: left;
+                position: absolute;
+                top: -85px;
+
+            }
+
+            h1::after{
+                content: 'Project';
+                font-family: "Audiowide", sans-serif;
+                font-size: 80px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 96px;
+                text-align: left;
+                position: absolute;
+                bottom: -68px;
+                left: 55%;
+
+            }
+        }
+
+        @media  screen and (max-width: 475px){
+            #homepage{
+                width: 100%;
+
+            }
+
+            .left{
+                width: auto;
+            }
+            
+
+            #cardslider{
+                width: auto;
+                overflow: hidden;
+            }
+
+            .swiper{
+                margin: 30% auto;
+            }
+
+            .Btn-container{
+                display: none;
+            }
+
+            .nav{
+                position: fixed;
+            }
+
+
+
+            h1{
+                font-family: "Audiowide", sans-serif;
+                font-size: 100px;
+                font-weight: 800;
+                font-style: normal;
+                line-height: 100px;
+                text-align: left;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
+            }
+
+            h1::before{
+                content: 'A';
+                font-family: "Audiowide", sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 96px;
+                text-align: left;
+                position: absolute;
+                top: -85px;
+
+            }
+
+            h1::after{
+                content: 'Project';
+                font-family: "Audiowide", sans-serif;
+                font-size: 40px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 96px;
+                text-align: left;
+                position: absolute;
+                bottom: -68px;
+                left: 55%;
+
+            }
+        }
         
 
     </style>
