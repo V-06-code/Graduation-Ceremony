@@ -22,14 +22,15 @@ var swiper = new Swiper(".swiper", {
     },
     breakpoints:{
         0:{
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween:20,
         },
         600:{
-            slidesPerView: 3,
+            slidesPerView: 2.5,
         },
         1200:{
             slidesPerView: 5,
+            spaceBetween:50,
         },
   
     },
