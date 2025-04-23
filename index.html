@@ -44,18 +44,44 @@
                         </svg>
                       </span>
                     </span>
-                  </button>
+                </button>
+                <button class="signupBtn" style="display: none;">
+                    Main Page
+                    <span class="arrow">
+                       <svg fill="rgb(183, 128, 255)" viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+                    </span>
+                </button>
+
+                  
             </div>
         </div>
 
         <div class="left">
         </div>
-        <h1>Media Hub</h1>
+        <h1>Beyond</h1>
     </section>
 
     <section id="cardslider">
         <div class="swiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                        <div class="front">
+                            <svg viewBox="0 0 600 200">
+                                <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Click me</text>
+                            </svg>
+                        </div>
+                        <div class="back">
+                            <div class="content">
+                                <i class="fa fa-quote-right"></i>
+                                <div class="quote">
+                                    Swipe right or left and click the card for a surprise
+                                </div>
+                                <p class="student">~Developer</p>
+                            </div>
+                        </div>
+                </div>
+              </div>
               <div class="swiper-slide">
                 <div class="card">
                     <div class="front">
@@ -78,16 +104,15 @@
                 <div class="card">
                     <div class="front">
                         <svg viewBox="0 0 600 200">
-                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Mrithul</text>
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Name</text>
                         </svg>
                     </div>
                     <div class="back">
                         <div class="content">
                             <i class="fa fa-quote-right"></i>
                             <div class="quote">
-                                All is not well
                             </div>
-                            <p class="student">~Vishal</p>
+                            <p class="student">~Name</p>
                         </div>
                     </div>
                 </div>
@@ -96,16 +121,15 @@
                 <div class="card">
                     <div class="front">
                         <svg viewBox="0 0 600 200">
-                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Taksh</text>
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Name</text>
                         </svg>
                     </div>
                     <div class="back">
                         <div class="content">
                             <i class="fa fa-quote-right"></i>
                             <div class="quote">
-                                All is not well
                             </div>
-                            <p class="student">~Vishal</p>
+                            <p class="student">~Name</p>
                         </div>
                     </div>
                 </div>
@@ -114,16 +138,15 @@
                 <div class="card">
                     <div class="front">
                         <svg viewBox="0 0 600 200">
-                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Nidhish</text>
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Name</text>
                         </svg>
                     </div>
                     <div class="back">
                         <div class="content">
                             <i class="fa fa-quote-right"></i>
                             <div class="quote">
-                                All is not well
                             </div>
-                            <p class="student">~Vishal</p>
+                            <p class="student">~Name</p>
                         </div>
                     </div>
                 </div>
@@ -132,16 +155,32 @@
                 <div class="card">
                     <div class="front">
                         <svg viewBox="0 0 600 200">
-                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Ameen</text>
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Name</text>
                         </svg>
                     </div>
                     <div class="back">
                         <div class="content">
                             <i class="fa fa-quote-right"></i>
                             <div class="quote">
-                                All is not well
                             </div>
-                            <p class="student">~Vishal</p>
+                            <p class="student">~Name</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="front">
+                        <svg viewBox="0 0 600 200">
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Name</text>
+                        </svg>
+                    </div>
+                    <div class="back">
+                        <div class="content">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="quote">
+                            </div>
+                            <p class="student">~Name</p>
                         </div>
                     </div>
                 </div>
@@ -179,7 +218,7 @@
         #homepage{
             width: 100%;
             height: 100vh;
-            background-image: url(./images/left.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/left.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -279,11 +318,47 @@
             transform: rotate(0deg);
         }
 
+        .signupBtn {
+            width: 120px;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 13px;
+            gap: 9px;
+            color: white;
+            background: linear-gradient(to right,rgb(255, 128, 187),rgb(198, 128, 255));
+            position: relative;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+            font-weight: 600;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 7.5px;
+            background-color: rgb(255, 255, 255);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            transition: all .5s ease;
+        }
+
+        .signupBtn:hover .arrow {
+            width: calc(120px - (7.5px)*2);
+        }
+
+
         .left{
             width: 50%;
             height: 100vh;
             float: left;
-            background-image: url(./images/left.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/left.jpg);
             background-size: auto;
         }
 
@@ -303,7 +378,7 @@
         }
 
         h1::before{
-            content: 'A';
+            content: 'Voices';
             font-family: "Audiowide", sans-serif;
             font-size: 80px;
             font-weight: 400;
@@ -316,7 +391,7 @@
         }
 
         h1::after{
-            content: 'Project';
+            content: 'Time';
             font-family: "Audiowide", sans-serif;
             font-size: 80px;
             font-weight: 500;
@@ -598,7 +673,7 @@
             }
 
             .swiper{
-                margin: 20% auto;
+                margin: 25% auto;
             }
 
 
@@ -639,7 +714,7 @@
             }
 
             h1::before{
-                content: 'A';
+                content: 'Voices';
                 font-family: "Audiowide", sans-serif;
                 font-size: 40px;
                 font-weight: 400;
@@ -652,7 +727,7 @@
             }
 
             h1::after{
-                content: 'Project';
+                content: 'Time';
                 font-family: "Audiowide", sans-serif;
                 font-size: 40px;
                 font-weight: 500;
@@ -685,6 +760,19 @@
                 margin: 20% auto;
             }
 
+            .swiper-pagination-bullet{
+            background-color: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+        }
+
+            .swiper-pagination-bullet-active{
+            width: 16px;
+            border-radius: 14px;
+        }
+
             h1{
                 font-family: "Audiowide", sans-serif;
                 font-size: 160px;
@@ -701,7 +789,7 @@
             }
 
             h1::before{
-                content: 'A';
+                content: 'Voices';
                 font-family: "Audiowide", sans-serif;
                 font-size: 80px;
                 font-weight: 400;
@@ -714,7 +802,7 @@
             }
 
             h1::after{
-                content: 'Project';
+                content: 'Time';
                 font-family: "Audiowide", sans-serif;
                 font-size: 80px;
                 font-weight: 500;
@@ -741,26 +829,63 @@
 
             #cardslider{
                 width: auto;
-                overflow: hidden;
+                overflow-y: auto;
             }
 
             .swiper{
                 margin: 30% auto;
             }
 
+            
+            .nav{
+                padding: 10px 10px;
+            }
+
+            .nav .logo{
+                margin-bottom: 90px;
+            }
+
+
+            .swiper{
+                margin-top: 300px;
+            }
+
+            .swiper-pagination-bullet{
+                background-color: #fff;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                transition: all 0.5s ease-in-out;
+            }
+
+            .swiper-pagination-bullet-active{
+                width: 16px;
+                border-radius: 14px;
+            }
+
+
+
             .Btn-container{
+                top: 0;
+                height: 50px;
+            }
+
+            .icon{
+                height: 5px;
+            }
+
+            .text {
                 display: none;
             }
 
-            .nav{
-                position: fixed;
+            .signupBtn{
+                display: block;
             }
-
 
 
             h1{
                 font-family: "Audiowide", sans-serif;
-                font-size: 100px;
+                font-size: 70px;
                 font-weight: 800;
                 font-style: normal;
                 line-height: 100px;
@@ -774,7 +899,7 @@
             }
 
             h1::before{
-                content: 'A';
+                content: 'Voices';
                 font-family: "Audiowide", sans-serif;
                 font-size: 40px;
                 font-weight: 400;
@@ -782,12 +907,12 @@
                 line-height: 96px;
                 text-align: left;
                 position: absolute;
-                top: -85px;
+                top: -60px;
 
             }
 
             h1::after{
-                content: 'Project';
+                content: 'Time';
                 font-family: "Audiowide", sans-serif;
                 font-size: 40px;
                 font-weight: 500;
